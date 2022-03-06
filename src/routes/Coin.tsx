@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
 import {
@@ -101,10 +100,6 @@ const Tap = styled.div<{ isActive:boolean }>`
     }
 `;
 
-
-interface RouteParams {
-    coinId:string;
-}
 interface RouteState {
     name : string;
 }

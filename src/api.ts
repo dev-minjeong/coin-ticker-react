@@ -1,4 +1,3 @@
-import { json } from "stream/consumers";
 
 const BASE_URL = `https://api.coinpaprika.com/v1`
 
