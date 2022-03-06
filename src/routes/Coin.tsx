@@ -52,8 +52,8 @@ const CoinInfo = styled.div`
     margin-top: 30px;
 `;
 const Box = styled.div`
-    background-color: #164b80;
-    color: white;
+    background-color: ${(props) => props.theme.boxColor};
+    color: ${(props) => props.theme.textColor};
     display: flex;
     justify-content: space-between;
     border-radius: 13px;
@@ -82,10 +82,10 @@ const TapBtn = styled.div`
     margin-bottom: 20px;
 `;
 const Tap = styled.div<{ isActive:boolean }>`
-    background-color: #164b80;
+    background-color: ${(props) => props.theme.boxColor};
     width: 270px;
     border-radius: 10px;
-    color: ${props => props.isActive ? props.theme.accentColor : "white"};
+    color: ${props => props.isActive ? props.theme.accentColor : props.theme.textColor};
     a {
         display: flex;
         align-items: center;

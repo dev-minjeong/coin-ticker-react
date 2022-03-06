@@ -24,9 +24,9 @@ text-align: center;
 const PriceList = styled.li`
     list-style: none;
     margin-top: 10px;
-    background-color: #164b80;
+    background-color: ${(props) => props.theme.boxColor};
     padding: 13px;
-    color: white;
+    color: ${(props) => props.theme.textColor};
     border-radius: 10px;
 `;
 function Price({coinId} : PriceProps) {

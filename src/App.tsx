@@ -60,7 +60,7 @@ table {
 body {
 	font-family: 'Source Sans Rro', sans-serif;
 	background-color: ${props => props.theme.bgColor};
-    color: ${props => props.theme.textColor};
+  color: ${props => props.theme.textColor};
 }
 a {
 	text-decoration: none;
@@ -81,7 +81,7 @@ function App() {
 	return (
 		<> 
       <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
-        <button onClick={toggleDark} >{isDark ? "DarkOn" : "DarkOff"}</button>
+        <button onClick={toggleDark} style={isDark ? {backgroundColor: `white`, color:`#2c3e50`} : {backgroundColor: `#2c3e50`, color:`white`}}>{isDark ? "DarkOn" : "DarkOff"}</button>
         <GlobalStyle></GlobalStyle>
         <HelmetProvider>
           <Router></Router>

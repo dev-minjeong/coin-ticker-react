@@ -18,7 +18,7 @@ const Header = styled.header`
 `;
 const CoinsList = styled.ul``;
 const Coin = styled.li`
-    background-color: white;
+    background-color: ${(props) => props.theme.boxColor};
     color: ${(props) => props.theme.textColor};
     border-radius: 15px;
     margin: 10px;
@@ -35,7 +35,7 @@ const Coin = styled.li`
     }
 `;
 const Title = styled.h1`
-font-size: 48px;
+    font-size: 48px;
     color: ${props => props.theme.accentColor};
 `;
 const Loader = styled.div`
