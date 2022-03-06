@@ -1,16 +1,10 @@
 {
   "files": {
-    "main.css": "/coin-ticker-react/static/css/main.073c9b0a.css",
-    "main.js": "/coin-ticker-react/static/js/main.f05b54ca.js",
-    "static/js/787.653953d0.chunk.js": "/coin-ticker-react/static/js/787.653953d0.chunk.js",
-    "static/media/logo.svg": "/coin-ticker-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.js": "/coin-ticker-react/static/js/main.a5c5f42c.js",
     "index.html": "/coin-ticker-react/index.html",
-    "main.073c9b0a.css.map": "/coin-ticker-react/static/css/main.073c9b0a.css.map",
-    "main.f05b54ca.js.map": "/coin-ticker-react/static/js/main.f05b54ca.js.map",
-    "787.653953d0.chunk.js.map": "/coin-ticker-react/static/js/787.653953d0.chunk.js.map"
+    "main.a5c5f42c.js.map": "/coin-ticker-react/static/js/main.a5c5f42c.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f05b54ca.js"
+    "static/js/main.a5c5f42c.js"
   ]
 }
