@@ -1,9 +1,9 @@
 import React from 'react';
-import { createGlobalStyle } from "styled-components"; 
-import Router from "./Router";
-import { ReactQueryDevtools } from "react-query/devtools";
-import { HelmetProvider } from "react-helmet-async";
-import { ThemeProvider } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
+import Router from './Router';
+import { ReactQueryDevtools } from 'react-query/devtools';
+import { HelmetProvider } from 'react-helmet-async';
+import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './theme';
 import { useState } from 'react';
 
@@ -59,8 +59,8 @@ table {
 }
 body {
 	font-family: 'Source Sans Rro', sans-serif;
-	background-color: ${props => props.theme.bgColor};
-  color: ${props => props.theme.textColor};
+	background-color: ${(props) => props.theme.bgColor};
+  color: ${(props) => props.theme.textColor};
 }
 a {
 	text-decoration: none;
@@ -74,24 +74,31 @@ button {
 	padding: 15px ;
 	cursor: pointer;
 }
-`
+`;
 function App() {
   const [isDark, setIsDark] = useState(false);
-	const toggleDark = () => setIsDark(current => !current);
-	return (
-		<> 
+  const toggleDark = () => setIsDark((current) => !current);
+  return (
+    <>
       <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
-        <button onClick={toggleDark} style={isDark ? {backgroundColor: `white`, color:`#2c3e50`} : {backgroundColor: `#2c3e50`, color:`white`}}>{isDark ? "DarkOn" : "DarkOff"}</button>
+        <button
+          onClick={toggleDark}
+          style={
+            isDark
+              ? { backgroundColor: `white`, color: `#2c3e50` }
+              : { backgroundColor: `#2c3e50`, color: `white` }
+          }
+        >
+          {isDark ? 'DarkOn' : 'DarkOff'}
+        </button>
         <GlobalStyle></GlobalStyle>
         <HelmetProvider>
           <Router></Router>
         </HelmetProvider>
-        <ReactQueryDevtools initialIsOpen={true}></ReactQueryDevtools>
+        {/* <ReactQueryDevtools initialIsOpen={true}></ReactQueryDevtools> */}
       </ThemeProvider>
-		</>
+    </>
   );
 }
-
-
 
 export default App;
